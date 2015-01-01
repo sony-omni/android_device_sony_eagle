@@ -16,7 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),eagle)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
     $(shell mkdir -p $(TARGET_OUT_ETC)/firmware/wcd9306; \
@@ -42,4 +41,3 @@ $(FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_SYMLINKS)
-endif

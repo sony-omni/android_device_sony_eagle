@@ -22,18 +22,19 @@ $(call inherit-product, device/sony/eagle/eagle.mk)
 # Inherit from common resources
 $(call inherit-product, device/sony/common/resources.mk)
 
-# Inherit CM common stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit Omni GSM telephony parts
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit Omni product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Product attributes
-PRODUCT_NAME := cm_eagle
+PRODUCT_NAME := omni_eagle
 PRODUCT_DEVICE := eagle
 PRODUCT_MODEL := Xperia M2
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_LOCALES += xhdpi hdpi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=D2303 \

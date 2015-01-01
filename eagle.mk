@@ -25,7 +25,12 @@ PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/system/etc/sap.conf:system/etc/sap.conf \
     device/sony/eagle/rootdir/system/etc/sec_config:system/etc/sec_config \
     device/sony/eagle/rootdir/fstab.yukon:root/fstab.yukon \
+    device/sony/eagle/rootdir/twrp.fstab:root/twrp.fstab \
     device/sony/eagle/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
+
+#Camera
+    ro.qc.sdk.gestures.camera=false \
+    camera2.portability.force_api=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
