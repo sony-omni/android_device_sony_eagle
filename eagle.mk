@@ -34,3 +34,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.debuggable=1 \
+    ro.adb.secure=1
