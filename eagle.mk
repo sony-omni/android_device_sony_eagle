@@ -17,7 +17,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/sony/msm8226-common/device.mk)
 $(call inherit-product, vendor/sony/eagle/eagle-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
+$(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
 PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/logo.rle:root/logo.rle \
     device/sony/eagle/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
