@@ -38,6 +38,12 @@ WLAN_MODULES:
 	ln -sf /system/lib/modules/pronto/pronto_wlan.ko $(TARGET_OUT)/lib/modules/wlan.ko
 TARGET_KERNEL_MODULES += WLAN_MODULES
 
+# Memory management
+MALLOC_IMPL := dlmalloc
+
+# Logd
+TARGET_USES_LOGD := false
+
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/eagle/rootdir/fstab.yukon
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
