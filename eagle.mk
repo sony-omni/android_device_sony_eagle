@@ -13,7 +13,6 @@
 # limitations under the License.
 
 # Include others
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/sony/msm8226-common/device.mk)
 $(call inherit-product, vendor/sony/eagle/eagle-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)

@@ -20,17 +20,13 @@ TARGET_SCREEN_WIDTH := 540
 PRODUCT_PACKAGES := \
     OmniTorch
 
-# Inherit from eagle device
-$(call inherit-product, device/sony/eagle/eagle.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from common resources
+# Common Sony Resources
 $(call inherit-product, device/sony/common/resources.mk)
-
-# Inherit Omni GSM telephony parts
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
-# Inherit Omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from yuga device
+$(call inherit-product, device/sony/eagle/eagle.mk)
 
 # Product attributes
 PRODUCT_NAME := omni_eagle
