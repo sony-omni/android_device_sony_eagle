@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
 
 #Camera
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.gestures.camera=false \
     camera2.portability.force_api=1
 
