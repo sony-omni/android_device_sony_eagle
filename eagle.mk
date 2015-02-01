@@ -40,6 +40,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
 
+#Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
+
 # M2 LTE specific ril properties
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGsmDevice=1 \
