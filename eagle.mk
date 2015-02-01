@@ -31,10 +31,9 @@ PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/twrp.fstab:root/twrp.fstab \
     device/sony/eagle/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc
 
-#Camera
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.gestures.camera=false \
-    camera2.portability.force_api=1
+# Device specific part for two-stage boot
+PRODUCT_COPY_FILES += \
+    device/sony/eagle/recovery/bootrec-device:recovery/bootrec-device
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
