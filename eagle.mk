@@ -15,6 +15,7 @@
 # Include others
 $(call inherit-product, device/sony/msm8226-common/device.mk)
 $(call inherit-product, vendor/sony/eagle/eagle-vendor.mk)
+$(call inherit-product, vendor/sony/msm8226-common/msm8226-common-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
 
