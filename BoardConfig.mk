@@ -20,6 +20,7 @@ TARGET_BOOTLOADER_BOARD_NAME := D2303
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := eagle_lte_defconfig
+BUILD_WITH_KERNEL_310 := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D2303,eagle,eagle_lte
