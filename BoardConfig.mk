@@ -41,7 +41,9 @@ TARGET_USES_LOGD := false
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/eagle/rootdir/fstab.yukon
+RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP flags
 DEVICE_RESOLUTION := 540x960
@@ -53,7 +55,7 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 # TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_JB_CRYPTO := false
+TW_INCLUDE_JB_CRYPTO := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/msm_sdcc.1/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
