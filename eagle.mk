@@ -21,6 +21,9 @@ $(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/eagle/overlay
 
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/eagle/overlay
+
 PRODUCT_COPY_FILES += \
     device/sony/eagle/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/eagle/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
