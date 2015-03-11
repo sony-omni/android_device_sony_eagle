@@ -47,8 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # M2 LTE specific ril properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnGsmDevice=1 \
-    ro.telephony.default_network=9 \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.add_power_save=1 \
     persist.radio.mode_pref_nv10=1 \
