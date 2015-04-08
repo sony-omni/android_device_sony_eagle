@@ -40,8 +40,8 @@ PRODUCT_COPY_FILES += \
     device/sony/eagle/recovery/bootrec-device:recovery/bootrec-device
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
-
+    ro.sf.lcd_density=240 \
+    ro.usb.pid_suffix=1B8
 #Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
